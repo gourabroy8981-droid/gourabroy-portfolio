@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gourab Roy | Developer Portfolio</title>
+    <!-- SEO Meta -->
+    <meta
+      name="google-site-verification"
+      content="eQGSAhBdn4pGtv42yMsaO9xZ7dXFVksDkAb1cvnNXIg"
+    />
+    <meta
+      name="description"
+      content="Gourab Roy is a Java Full Stack Developer specializing in responsive web design, modern UI, and scalable applications using Java, HTML, CSS, and JavaScript."
+    />
+    <meta
+      name="keywords"
+      content="Gourab Roy,Roy Gourab, Gourab Roy Portfolio, gourabroy, gourab roy, gourab, roy, roygourab, roy gourab, royy_gourab, Gourab, Roy,gourab BIET, student of KHS, Bhadrak Institute of Engineering & Technology,gourabroy8981-droid,gourabroy8981,@GourabRoy9861,Java Full Stack Developer, Java Developer, Software Engineer, Web Developer, Frontend Developer, Backend Developer, Full Stack Engineer, Java Programmer, HTML Developer, CSS Developer, JavaScript Developer, Responsive Web Design, UI Developer, Portfolio Website, Web Application Developer, Java Projects, Modern Web Developer, Spring Boot Developer, REST API Developer, MySQL Developer, jQuery Developer, Git, GitHub Portfolio, Software Portfolio, Freelance Web Developer, Java Web Developer, Clean UI Developer, Performance Optimized Websites, Kaupur High School, Bhadrak, Odisha, India, Daising, Kaupur, student of Bhadrak Institute of Engineering & Technology, Java Full Stack Developer Portfolio"
+    />
+    <meta name="author" content="Gourab Roy" />
+    <link rel="canonical" href="https://gourabroy.online/" />
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Disable transitions until theme applied to avoid flash -->
+    <style id="init-theme-style">
+      html,
+      body {
+        transition: none !important;
+      }
+    </style>
+    <!-- Ensure theme applied before CSS to avoid flash -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (t === "light") {
+            document.documentElement.classList.add("light-mode");
+          } else {
+            document.documentElement.classList.remove("light-mode");
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Apply light mode class immediately after body opens -->
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+      }
+      // Remove blocking style after first paint
+      window.requestAnimationFrame(function () {
+        var s = document.getElementById("init-theme-style");
+        if (s) s.remove();
+      });
+      // Set theme toggle button icon immediately
+      (function setButtonIcon() {
+        var btn = document.getElementById("theme-toggle");
+        if (btn) {
+          btn.textContent =
+            localStorage.getItem("theme") === "light" ? "☀️" : "🌙";
+        } else {
+          // If button not found yet, try again after a short delay
+          setTimeout(setButtonIcon, 10);
+        }
+      })();
+    </script>
+    <div id="scroll-progress"></div>
+    <header>
+      <nav class="navbar">
+        <a href="https://gourabroy.online/">
+          <h2 class="logo" style="font-size: 35px; padding-top: 5px">
+            Gourab Roy
+          </h2>
+        </a>
+
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links" id="nav-list">
+          <li><a href="https://gourabroy.online/" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="theme-item">
+            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Gourab Roy</span></h1>
+        <h2>Java Developer | Frontend Developer</h2>
+        <p>
+          I build clean, efficient, and user-friendly web applications using
+          Java and modern web technologies.
+        </p>
+        <div class="hero-buttons" style="margin-top: 30px">
+          <a href="assets/docs/Resume.pdf" class="btn primary" download>
+            Download Resume
+          </a>
+          <a href="projects.html" class="btn secondary"> View Projects </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/profile.jpg" alt="Gourab Roy" />
+      </div>
+    </section>
+    <!-- HIGHLIGHTS -->
+    <section class="highlights">
+      <div class="highlight-card">
+        <h3>Java</h3>
+        <p>Strong foundation in OOP, inheritance, and core Java concepts.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, JavaScript with responsive UI design.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>Projects</h3>
+        <p>Real-world academic and personal projects with clean code.</p>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-contact">
+          <h3>Contact Me</h3>
+          <p><i class="fas fa-phone"></i> +91 9861838981</p>
+          <p><i class="fas fa-envelope"></i> gourabroy8981@gmail.com</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Bhubaneswar, Odisha, India
+          </p>
+        </div>
+        <div class="footer-social">
+          <h3>Follow Me</h3>
+          <a href="https://www.facebook.com/share/1CWNRqF3QG/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/royy_gourab?igsh=YmJ3aThtemJ3OW12"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://x.com/GourabRoy9861" target="_blank">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/gourab-roy-76b706372"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/gourabroy8981-droid" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-bottom">© 2026 Gourab Roy | Developer Portfolio</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

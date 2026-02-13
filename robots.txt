@@ -1,0 +1,11 @@
+robots.txt (Static Website – SEO friendly)
+
+User-agent: *
+Allow: /
+
+# Block unnecessary folders
+Disallow: /assets/private/
+Disallow: /admin/
+
+# Sitemap (optional but recommended)
+Sitemap: https://gourabroy.online/sitemap.xml
